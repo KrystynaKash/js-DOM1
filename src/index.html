@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Калькулятор</h1>
+        <div class="inputs">
+            <input type="text" id="input1" placeholder="Число 1">
+            <input type="text" id="input2" placeholder="Число 2">
+        </div>
+        <div class="buttons">
+            <button onclick="calculate('+')">Додати</button>
+            <button onclick="calculate('-')">Відняти</button>
+            <button onclick="calculate('*')">Множити</button>
+            <button onclick="calculate('/')">Ділити</button>
+        </div>
+        <div class="result">
+            <h2>Результат: <span id="result">0</span></h2>
+        </div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
